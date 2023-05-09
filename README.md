@@ -1,7 +1,7 @@
 # XAMPPBackup
 # MySQL Database Backup to local Script
 
-This script allows you to create a backup of an external MySQL database and restore it to a local MySQL database using XAMPP.
+This script allows you to download a backup (sql file)of an external MySQL database and restore it to a local MySQL database using XAMPP.
 
 ## Prerequisites.
 
