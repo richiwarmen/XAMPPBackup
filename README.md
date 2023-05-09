@@ -25,5 +25,26 @@ Before using this script, ensure that you have the following:
 
 5. Run the script by executing the following command:
 
-   ```cmd
-   backup_restore.bat <database_name>
+  cmd
+  backup_restore.bat <database_name>
+Replace <database_name> with the name of the database you want to backup and restore.
+
+6. The script will create a backup of the external database, remove all tables from the local database, download the database dump from the external source, and import it into the local database.
+
+## If everything is running ad task to windows Task Scheduler: 
+1. Open Task Scheduler.
+2. Click on "Create Task" in the right panel.
+3. Provide a name and an optional description for the task.
+4. Go to the "Triggers" tab and click on "New".
+5. Set the trigger based on your requirements.
+6. Go to the "Actions" tab and click on "New".
+7. In the "Program/script" field, browse to the path of the "backup_restore.bat" file.
+8. Add the database input argument to the "Add arguments" field. For example: %databasename%.
+9. In the "Start in" field, specify the path to the folder where the batch file is located.
+10. Click "OK" to add the action.
+11. Click "OK" to create the task.
+
+## Important Notes
+This script assumes that you have XAMPP installed in the default location (C:\xampp). If your XAMPP installation is in a different location, make sure to update the xamppdir variable accordingly.
+The external URL (externalurl) should point to the location where the external database dump is accessible. Update it with the correct URL before running the script.
+Take caution when using the "DROP TABLE" command, as it permanently deletes all tables from the local database. Make sure you have a proper backup before executing this script.
