@@ -27,6 +27,7 @@ Before using this script, ensure that you have the following:
 
   cmd
   backup_restore.bat <database_name>
+  
 Replace <database_name> with the name of the database you want to backup and restore.
 
 6. The script will create a backup of the external database, remove all tables from the local database, download the database dump from the external source, and import it into the local database.
