@@ -25,5 +25,5 @@ Before using this script, ensure that you have the following:
 
 5. Run the script by executing the following command:
 
-   ```shell
+   ```cmd
    backup_restore.bat <database_name>
