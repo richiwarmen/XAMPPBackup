@@ -3,7 +3,7 @@
 
 This script allows you to create a backup of an external MySQL database and restore it to a local MySQL database using XAMPP.
 
-## Prerequisites
+## Prerequisites.
 
 Before using this script, ensure that you have the following:
 
